@@ -5,7 +5,7 @@ const experiences = [
     type: 'work',
     title: 'Fullstack Node Developer',
     company: 'Hubexo — Lisbon, Portugal',
-    period: 'Mar 2024 — Present',
+    period: 'Mar 2024 — Mar 2026',
     description:
       'Building a high-performance e-commerce platform for a British client using Angular, NestJS, .NET and GraphQL.',
     highlights: [
@@ -14,6 +14,14 @@ const experiences = [
       'Implemented efficient indexing strategies for real-time updates',
       'Used PostgreSQL as the primary database for .NET services with optimized queries and strong API performance',
     ],
+  },
+  {
+    type: 'education',
+    title: 'BTech, Game Design and Unreal Development',
+    company: 'EBAC — Escola Britânica de Artes Criativas e Tecnologia',
+    period: 'Jan 2023 — Aug 2024',
+    description: '',
+    highlights: [],
   },
   {
     type: 'work',
@@ -31,7 +39,7 @@ const experiences = [
   {
     type: 'work',
     title: 'Node.js Developer',
-    company: 'IBM — São Paulo, Brazil',
+    company: 'IBM — São Paulo, Brasil',
     period: 'Jun 2019 — Jun 2022',
     description:
       'Built high-availability applications with Angular and Express, using Apache Kafka to handle high-volume data demand.',
@@ -44,7 +52,7 @@ const experiences = [
   {
     type: 'work',
     title: 'Java and Oracle Developer',
-    company: 'IBM — São Paulo, Brazil',
+    company: 'IBM — São Paulo, Brasil',
     period: 'Nov 2017 — May 2019',
     description:
       'Application development and support in PL/SQL (Oracle Forms) and SOAP APIs with Java 1.4.',
@@ -53,7 +61,7 @@ const experiences = [
   {
     type: 'work',
     title: 'Software Engineer Intern',
-    company: 'Universidade Presbiteriana Mackenzie — São Paulo, Brazil',
+    company: 'Universidade Presbiteriana Mackenzie — São Paulo, Brasil',
     period: 'Mar 2017 — Oct 2017',
     description:
       'Helped build new internal systems for the University (Software Factory / Mackleaps).',
@@ -68,14 +76,6 @@ const experiences = [
     title: "Bachelor's degree, Systems Engineering",
     company: 'Universidade Presbiteriana Mackenzie',
     period: '2018 — 2019',
-    description: '',
-    highlights: [],
-  },
-  {
-    type: 'education',
-    title: 'BTech, Game Design and Unreal Development',
-    company: 'EBAC — Escola Britânica de Artes Criativas e Tecnologia',
-    period: 'Jan 2023 — Aug 2024',
     description: '',
     highlights: [],
   },
@@ -96,7 +96,7 @@ export default function Experience() {
         <p className="section-label">// experience</p>
         <h2 className="section-title">Career & Education</h2>
         <p className="section-subtitle">
-          Six+ years building production software across Brazil and Portugal.
+          9+ years building production software across Brasil and Portugal.
         </p>
 
         <div className={styles.timeline}>

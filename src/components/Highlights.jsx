@@ -2,11 +2,10 @@ import styles from './Projects.module.css'
 import local from './Highlights.module.css'
 
 const certifications = [
-  'IBM Cloud Essentials — V3',
-  'Watson and Cloud Foundations',
-  'Design Microservices Architecture with Patterns & Principles',
-  'Cloud Core',
-  'Profissão: Game Designer e Desenvolvedor Unreal (EBAC)',
+  { name: 'Design Microservices Architecture with Patterns & Principles', issuer: 'Udemy', year: 'Mar 2026' },
+  { name: 'Management Skills — Team Leadership Masterclass', issuer: 'Udemy', year: 'Feb 2026' },
+  { name: 'Containers & Kubernetes Essentials', issuer: 'IBM', year: 'Jun 2021' },
+  { name: 'IBM Cloud Essentials — V3', issuer: 'IBM', year: 'Jun 2021' },
 ]
 
 const volunteering = [
@@ -43,16 +42,28 @@ export default function Highlights() {
             </div>
             <h3 className={styles.title}>Courses & Credentials</h3>
             <p className={styles.description}>
-              Formal training in cloud, microservices architecture and game development.
+              A selection of recent certifications across architecture, leadership,
+              cloud and game development.
             </p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 12 }}>
               {certifications.map((c) => (
-                <li key={c} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: '0.92rem', color: 'var(--text-secondary)' }}>
-                  <span style={{ color: 'var(--accent)', flexShrink: 0 }}>▹</span>
-                  <span>{c}</span>
+                <li key={c.name} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: '0.9rem' }}>
+                  <span style={{ color: 'var(--accent)', flexShrink: 0, marginTop: 2 }}>▹</span>
+                  <span style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                    <span style={{ color: 'var(--text-primary)' }}>{c.name}</span>
+                    <span style={{ color: 'var(--text-secondary)', fontSize: '0.78rem' }}>{c.issuer} · {c.year}</span>
+                  </span>
                 </li>
               ))}
             </ul>
+            <a
+              href="https://www.linkedin.com/in/giovanni-vicario/details/certifications/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ marginTop: 14, fontSize: '0.85rem', color: 'var(--accent)', textDecoration: 'none' }}
+            >
+              See full list on LinkedIn ↗
+            </a>
           </div>
 
           <div className={`${styles.card} ${styles.highlighted}`}>
@@ -66,9 +77,12 @@ export default function Highlights() {
             </div>
             <h3 className={styles.title}>As Crônicas do Universo: Em Busca das Essências</h3>
             <p className={styles.description}>
-              Henry and his partner Saravedro chase an ancient myth — the Essences
-              of Life and Death — on a perilous voyage that could decide the fate
-              of all creation.
+              In a world where life endures between Order and Chaos, two forces
+              are created to keep reality in balance. The Ancients called them
+              the Essence of Life and Death. Henry, a seasoned
+              adventurer with a long history of journeys across the continent,
+              and his partner follow an old mythology to locate one of
+              these Essences.
             </p>
             <div className={styles.tags}>
               {['Fantasy', 'Adventure', 'Portuguese', 'Published 2020'].map((tag) => (
