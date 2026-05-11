@@ -14,7 +14,7 @@ export default function GameDev() {
 
         <div className={styles.grid}>
           <div className={`${styles.card} ${styles.highlighted}`}>
-            <div className={styles.featuredBadge}>⭐ Released</div>
+            <div className={styles.featuredBadge}>In Development</div>
 
             <div className={styles.cardTop}>
               <div className={styles.platformBadge} style={{ background: '#1b2838' }}>

@@ -1,4 +1,5 @@
 import styles from './Projects.module.css'
+import local from './Highlights.module.css'
 
 const certifications = [
   'IBM Cloud Essentials — V3',
@@ -32,7 +33,7 @@ export default function Highlights() {
           scouting — things that shape how I work and learn.
         </p>
 
-        <div className={styles.grid} style={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
+        <div className={`${styles.grid} ${local.grid3}`}>
           <div className={styles.card}>
             <div className={styles.cardTop}>
               <div className={styles.platformBadge} style={{ background: '#1f6feb' }}>
