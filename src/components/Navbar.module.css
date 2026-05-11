@@ -1,0 +1,138 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: background 0.3s, border-bottom 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.scrolled {
+  background: rgba(13, 13, 20, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.logoAccent {
+  color: var(--accent);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.link:hover {
+  color: var(--text-light);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.ctaBtn {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent-light);
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border-accent);
+  margin-left: 8px;
+  transition: all 0.2s;
+}
+
+.ctaBtn:hover {
+  background: var(--accent-glow);
+  color: var(--text-light);
+  border-color: var(--accent);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-light);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.line1Open {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.line2Open {
+  opacity: 0;
+}
+
+.line3Open {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(13, 13, 20, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .open {
+    display: flex;
+  }
+
+  .link {
+    width: 100%;
+    padding: 12px 16px;
+  }
+
+  .ctaBtn {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}

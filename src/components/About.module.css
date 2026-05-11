@@ -1,0 +1,114 @@
+.about {
+  border-top: 1px solid var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.para {
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.para strong {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.para a {
+  color: var(--accent-light);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.para a:hover {
+  border-bottom-color: var(--accent-light);
+}
+
+.stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNumber {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent-light);
+  font-family: var(--font-mono);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid var(--border);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.fileName {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text);
+  padding: 20px;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    gap: 20px;
+  }
+
+  .statNumber {
+    font-size: 24px;
+  }
+}
